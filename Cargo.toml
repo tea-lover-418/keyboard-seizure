@@ -7,5 +7,6 @@ edition = "2021"
 
 [dependencies]
 enigo = "0.0.14"
+google-youtube3 = "4.0.1"
 inputbot = "0.5.1"
 rand = "0.8.5"

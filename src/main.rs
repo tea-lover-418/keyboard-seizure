@@ -3,6 +3,7 @@ use std::{thread, time};
 
 use enigo::*;
 use inputbot::KeybdKey::*;
+pub mod chat_connector;
 
 struct Movement {
     duration: time::Duration,
@@ -12,6 +13,8 @@ struct Movement {
 const LEVEL: i16 = 1;
 
 fn main() {
+    let mut chat_connector = chat_connector::ChatConnector::new("cool");
+
     CapsLockKey.bind(|| {
         while CapsLockKey.is_toggled() {
             seizure();
